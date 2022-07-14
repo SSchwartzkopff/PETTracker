@@ -9,13 +9,14 @@ Included are:
 	DataPreparation.ipynb - (Jupyter Notebook file) turns simulation files ".sim" from MEGAlib into ".csv" files usable by the neural network
 	PETTracker.ipynb      - (Jupyter Notebook file) all programs neural network related, contains the model, can load and save model, can create data sets and test them, also contains optuna training for hyperparameters
 
-	Example Data        - example of the prepared data
-	Example Simulation  - example of a simulation file created by MEGAlib
-	Output              - the network will save its output in this folder, this was already done for the file in the "Example Data" folder
-	Saved Network       - the trained network and it's training parameters are saved in this folder
-	TrainNorm           - the normalization values used for the training data are saved in this folder (they have to be applied to any new data)
-	PETTracker-study.db - the database for the optuna hyperparameter tuning which includes all parameters that were tested and their performance
-	SimToDataframe.py   - all the functions used for the data preparation in "DataPreparation.ipynb"
+	Example Data              - example of the prepared data
+	Example Simulation        - example of a simulation file created by MEGAlib
+	Notebooks as Python Files - both the PETTracker and DataPreperation notebooks can be found here as ".py" files
+	Output                    - the network will save its output in this folder, this was already done for the file in the "Example Data" folder
+	Saved Network             - the trained network and it's training parameters are saved in this folder
+	TrainNorm                 - the normalization values used for the training data are saved in this folder (they have to be applied to any new data)
+	PETTracker-study.db       - the database for the optuna hyperparameter tuning which includes all parameters that were tested and their performance
+	SimToDataframe.py         - all the functions used for the data preparation in "DataPreparation.ipynb"
 
 The ".ipynb" are jupyter notebooks that include the main code to run the data preparation as well as the network.
 Simulation data should first be prepared with "DataPreparation.ipynb". The resulting ".csv" files can be used with the neural network in "PETTracker.ipynb".
